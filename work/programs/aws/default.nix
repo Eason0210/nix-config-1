@@ -15,7 +15,6 @@ in
     pkgs.awscli
     pkgs.ssm-session-manager-plugin
     (pkgs.callPackage ./ssm-helpers.nix {})
-    (pkgs.callPackage ./awsp.nix {})
     nix-dss.bamc
   ];
 
