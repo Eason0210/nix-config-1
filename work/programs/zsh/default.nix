@@ -6,7 +6,7 @@ in
   programs.zsh = {
     shellAliases = {
       awsall = "_awsListProfile";
-      awsp = "_awsSetProfile";
+      awsp = "_awsSwitchProfile";
       awswho = "aws configure list";
     };
 
