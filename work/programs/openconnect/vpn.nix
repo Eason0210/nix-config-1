@@ -15,6 +15,6 @@ in
 writeScriptBin "vpn" ''
   ${passwordCommand} | \
     sudo openconnect vpn.disneystreaming.com \
-      --user jkoslowski \
+      --user jkozlowski \
       --background''
 # ${vpnDance}''
