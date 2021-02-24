@@ -11,5 +11,9 @@ in
     };
 
     initExtra = ''source ${awsp-script}'';
+
+    oh-my-zsh = {
+      plugins = [ "aws" ];
+    };
   };
 }
