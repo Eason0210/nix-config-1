@@ -4,9 +4,9 @@ let
   inherit (node2nix) dynamodb-admin;
   dynamodb-admin-local =
     pkgs.writeScriptBin
-      "dynamodb-admin-local"
+      "dynamodb-admin"
       "DYNAMO_ENDPOINT=http://localhost:4569 ${dynamodb-admin}/bin/dynamodb-admin $@";
 in
 {
-  home.packages = [ dynamodb-admin dynamodb-admin-local ];
+  home.packages = [ dynamodb-admin-local ];
 }
