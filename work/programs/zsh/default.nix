@@ -1,4 +1,3 @@
-{ ... }:
 let
   awsp-script = import ../aws/awsp.nix;
 in
