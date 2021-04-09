@@ -31,6 +31,6 @@ let
     };
 in
 {
-  imports = [ snowflake ];
+  imports = [ snowflake ./semisecret-extensions.nix ];
   programs.vscode.extensions = [ swagger-viewer sqltools ];
 }
