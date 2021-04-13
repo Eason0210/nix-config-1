@@ -1,5 +1,6 @@
 { pkgs, ... }:
 let
+  nix-dss = import ../nix-dss.nix { inherit pkgs; };
   vscode-lib = import ../../vscode/lib.nix;
   inherit (vscode-lib) configuredExtension;
   extensionFromVscodeMarketplace = pkgs.vscode-utils.extensionFromVscodeMarketplace;
@@ -31,6 +32,6 @@ let
     };
 in
 {
-  imports = [ snowflake ./semisecret-extensions.nix ];
-  programs.vscode.extensions = [ swagger-viewer sqltools ];
+  imports = [ snowflake ];
+  programs.vscode.extensions = [ swagger-viewer sqltools nix-dss.vscode-extensions.smithy-lsp ];
 }
