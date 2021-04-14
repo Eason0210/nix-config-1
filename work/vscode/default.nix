@@ -33,5 +33,5 @@ let
 in
 {
   imports = [ snowflake ];
-  programs.vscode.extensions = [ swagger-viewer sqltools nix-dss.vscode-extensions.smithy-lsp ];
+  programs.vscode.extensions = [ swagger-viewer sqltools nix-dss.vscode-extensions.smithy-vscode ];
 }

@@ -1,7 +1,7 @@
 import (
   builtins.fetchGit {
     url = "git@github.bamtech.co:jkozlowski/nix-dss";
-    ref = "v0.0.8";
-    rev = "b03260543cc145c6b776afc8c8d7c47fcd2ca75e";
+    ref = "v0.0.10";
+    rev = "7ce25a4117e63e147e281499b20503587d18c184";
   }
 )
