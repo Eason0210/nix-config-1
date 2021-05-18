@@ -9,6 +9,7 @@ in
     ./programs/zsh
     ./programs/openconnect
     ./vscode
+    ./scala
     ./semisecret-work.nix
   ];
 
