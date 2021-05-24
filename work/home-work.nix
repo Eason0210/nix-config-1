@@ -10,7 +10,6 @@ in
     ./programs/openconnect
     ./vscode
     ./scala
-    ./semisecret-work.nix
   ];
 
   home.packages = [
