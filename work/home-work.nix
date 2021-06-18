@@ -6,6 +6,7 @@ in
   imports = [
     ./node
     ./programs/aws
+    ./programs/ssh
     ./programs/zsh
     ./programs/openconnect
     ./vscode
