@@ -15,5 +15,6 @@ in
 
   home.packages = [
     nix-dss.create-account
+    pkgs.pipenv
   ];
 }
