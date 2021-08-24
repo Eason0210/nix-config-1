@@ -15,6 +15,7 @@ in
 
   home.packages = [
     nix-dss.create-account
+    nix-dss.scala-cli
     pkgs.pipenv
   ];
 }
