@@ -1,7 +1,4 @@
 { pkgs, ... }:
-let
-  nix-dss = import ./nix-dss.nix { inherit pkgs; };
-in
 {
   imports = [
     ./node
@@ -14,8 +11,8 @@ in
   ];
 
   home.packages = [
-    nix-dss.create-account
-    nix-dss.scala-cli
+    pkgs.dss.create-account
+    pkgs.dss.scala-cli
     pkgs.pipenv
   ];
 }
