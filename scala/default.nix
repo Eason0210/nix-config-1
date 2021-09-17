@@ -24,6 +24,6 @@
     enable = true;
   };
 
-  home.file.".sbt/1.0/global.sbt".text = builtins.readFile
-    ./global.sbt;
+  # home.file.".sbt/1.0/global.sbt".text = builtins.readFile
+  #   ./global.sbt;
 }
