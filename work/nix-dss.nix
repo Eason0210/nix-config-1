@@ -5,7 +5,7 @@ _: super:
       builtins.fetchGit {
         url = "git@github.bamtech.co:jkozlowski/nix-dss";
         ref = "master";
-        rev = "a10c1b0ca7b790db6ad8261ff78a4c6660ed0c39";
+        rev = "0ffd424c7abdc5a1fde86ea5effb912540115c62";
       }
     ) { pkgs = super; };
 }
