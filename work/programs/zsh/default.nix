@@ -9,16 +9,19 @@ in
       awswho = "aws configure list";
     };
 
-    initExtra = ''
-      source ${awsp-script}
-    '';
-
     initExtraBeforeCompInit = ''
       fpath+=(~/dev/dss-scripts/completions)
+    '';
+
+    initExtra = ''
+      source ${awsp-script}
+      source ~/dev/dss-scripts;
     '';
 
     oh-my-zsh = {
       plugins = [ "aws" ];
     };
   };
+
+  home.sessionPath = [ "$HOME/dev/dss-scripts/bin" ];
 }
