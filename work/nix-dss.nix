@@ -1,11 +1,7 @@
 _: super:
+let
+  sources = import ../nix/sources.nix;
+in
 {
-  dss =
-    import (
-      builtins.fetchGit {
-        url = "git@github.bamtech.co:jkozlowski/nix-dss";
-        ref = "master";
-        rev = "924924b0e47da9119a33135060babad43d331607";
-      }
-    ) { pkgs = super; };
+  dss = import sources.nix-dss { pkgs = super; };
 }
