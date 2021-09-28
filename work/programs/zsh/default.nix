@@ -15,7 +15,6 @@ in
 
     initExtra = ''
       source ${awsp-script}
-      source ~/dev/dss-scripts;
     '';
 
     oh-my-zsh = {
@@ -23,5 +22,4 @@ in
     };
   };
 
-  home.sessionPath = [ "$HOME/dev/dss-scripts/bin" ];
 }
