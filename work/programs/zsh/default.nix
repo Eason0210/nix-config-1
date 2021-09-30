@@ -9,10 +9,6 @@ in
       awswho = "aws configure list";
     };
 
-    initExtraBeforeCompInit = ''
-      fpath+=(~/dev/dss-scripts/completions)
-    '';
-
     initExtra = ''
       source ${awsp-script}
     '';
