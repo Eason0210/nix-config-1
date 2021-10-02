@@ -13,7 +13,7 @@ in
     # Auto upgrade nix package and the daemon service.
     # better not XD
     #  services.nix-daemon.enable = true;
-    package = pkgs.nix;
+    package = pkgs.nixFlakes;
 
     # https://github.com/LnL7/nix-darwin/issues/145
     # https://github.com/LnL7/nix-darwin/issues/105#issuecomment-567742942
