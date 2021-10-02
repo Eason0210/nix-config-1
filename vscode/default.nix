@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, unstable, ... }:
 
 let
   inherit (pkgs) vscode-extensions;
@@ -38,7 +38,10 @@ let
   };
   rust-analyzer = configuredExtension {
     extension = managed.matklad.rust-analyzer;
-    settings = { "rust-analyzer.serverPath" = "${pkgs.unstable.rust-analyzer}/bin/rust-analyzer"; };
+    # todo
+    # some issues with importing from unstable when it's passed as an input to the config.
+    # Also, it'd be nice to support the usual style of darwin-configuration without relying on Flakes working.
+    # settings = { "rust-analyzer.serverPath" = "${pkgs.unstable.rust-analyzer}/bin/rust-analyzer"; };
   };
   scala = configuredExtension
     {
