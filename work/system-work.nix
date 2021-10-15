@@ -3,7 +3,7 @@ let
 in
 {
   imports =
-    [ ./system/vpnc ];
+    [ ./system/vpnc ./system/fonts ];
 
   nixpkgs = {
     overlays = [ (import ./nix-dss.nix) ];
