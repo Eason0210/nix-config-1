@@ -1,4 +1,4 @@
-{ writeScriptBin, bash, gawk, config }:
+{ writeScriptBin, bash, gawk }:
 let
   passwordCommand = "${bash}/bin/bash ${builtins.toString ./secret-vpn.sh}";
 in

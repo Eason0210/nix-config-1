@@ -1,5 +1,5 @@
 { pkgs, config, ... }:
 let
-  vpn = pkgs.callPackage ./vpn.nix { inherit config; };
+  vpn = pkgs.callPackage ./vpn.nix { };
 in
 { home.packages = [ pkgs.openconnect vpn ]; }

@@ -20,5 +20,9 @@ let
 in
 {
   imports = [ snowflake ];
-  programs.vscode.extensions = [ swagger-viewer sqltools pkgs.dss.vscode-extensions.vscode-smithy ];
+  programs.vscode.extensions = [
+    swagger-viewer
+    sqltools
+    pkgs.dss.vscode-extensions.vscode-smithy
+  ];
 }
