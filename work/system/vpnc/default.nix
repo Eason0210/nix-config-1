@@ -9,7 +9,7 @@
 
     "vpnc/post-disconnect.d/reset".text = ''
       #!${pkgs.bash}/bin/bash
-      networksetup -setdnsservers Wi-Fi Empty
+      networksetup -setdnsservers Wi-Fi 1.1.1.1
     '';
   };
 }
