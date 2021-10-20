@@ -11,7 +11,8 @@
   ];
 
   home.packages = [
-    pkgs.dss.create-account
+    # todo openssl
+    # pkgs.dss.create-account
     pkgs.dss.scala-cli
     pkgs.dss.dss-scripts
     pkgs.pipenv
