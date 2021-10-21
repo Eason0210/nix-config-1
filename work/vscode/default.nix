@@ -22,6 +22,7 @@ in
   imports = [ snowflake ];
   programs.vscode.extensions = [
     swagger-viewer
+    managed.silvenon.mdx
     sqltools
     pkgs.dss.vscode-extensions.vscode-smithy
   ];
