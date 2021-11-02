@@ -12,6 +12,5 @@
 
   home.packages = [
     pkgs.dss.dss-scripts
-    pkgs.pipenv
   ];
 }

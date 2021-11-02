@@ -6,24 +6,9 @@ let
     file = ./extensions/managed.nix;
     inherit (pkgs) vscode-utils;
   };
-  swagger-viewer = managed.Arjun.swagger-viewer;
-  sqltools = managed.mtxr.sqltools;
-  snowflake =
-    configuredExtension {
-      extension = managed.koszti.snowflake-driver-for-sqltools;
-      settings = {
-        "sqltools.connections" = [
-          (import ./semisecret-snowflake.nix)
-        ];
-      };
-    };
 in
 {
-  imports = [ snowflake ];
   programs.vscode.extensions = [
-    swagger-viewer
-    managed.silvenon.mdx
-    sqltools
-    pkgs.dss.vscode-extensions.vscode-smithy
+    managed.Arjun.swagger-viewer
   ];
 }
