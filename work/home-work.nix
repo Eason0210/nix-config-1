@@ -11,7 +11,6 @@
   ];
 
   home.packages = [
-    pkgs.dss.create-account
     pkgs.dss.dss-scripts
     pkgs.pipenv
   ];
