@@ -1,6 +1,6 @@
 { pkgs, ... }:
 let
-  node2nix = pkgs.callPackage ./node2nix {};
+  node2nix = pkgs.callPackage ./node2nix { };
   inherit (node2nix) dynamodb-admin;
   dynamodb-admin-local =
     pkgs.writeScriptBin
